@@ -8,6 +8,7 @@ const App = () => {
         padding: '10px',
         textAlign: 'center',
         backgroundColor: 'cyan',
+        border: '2px solid green',
       }}
     >
       <h1>Micro Frontend 2</h1>

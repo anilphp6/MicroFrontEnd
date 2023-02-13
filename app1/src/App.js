@@ -1,22 +1,20 @@
-import React, {Suspense} from "react";
-const RemoteApp = React.lazy(() => import("app2/App"));
-
+import React from 'react';
 const App = () => {
   return (
     <div>
-      <div style={{
-        margin:"10px",
-        padding:"10px",
-        textAlign:"center",
-        backgroundColor:"greenyellow"
-      }}>
+      <div
+        style={{
+          margin: '10px',
+          padding: '10px',
+          textAlign: 'center',
+          backgroundColor: 'greenyellow',
+          border: '1px solid red',
+        }}
+      >
         <h1>Micro Frontend 1</h1>
       </div>
-      <Suspense fallback={"loading..."}>
-        <RemoteApp/>
-      </Suspense>
-    </div>)
-}
-
+    </div>
+  );
+};
 
 export default App;
